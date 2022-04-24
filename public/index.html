@@ -7,39 +7,52 @@
     <title>Interative price component</title>
     <link rel="stylesheet" href="./build/tailwind.css">
 </head>
-<body>
-    <header>
-        <h1>Simple, traffic-based pricing</h1>
-        <p>Sign-up for our 30-day trial. No credit card required. </p>
-        <div>
-            <img src="" alt="">
-        </div>
-    </header>
-<main>
-    <div>
-        <div>
-            <h2>100k Page views</h2>
-            <input type="radio" value="50" min="0" max="100">
-            <p>$16.00 <span>/month</span></p>
-            <p>Monthly Billing<button>--Toogle BTN--</button>Yearly Billing <span>-25%</span></p>
-        </div>
-        <div>
-            <div>
-                <img src="" alt="">
-                <p>Unlimited websites</p>
+<body class="pt-8 flex justify-center items-center bg-[url('/images/bg-pattern.svg')] bg-no-repeat">
+    <div class="max-w-md m-8">
+        <header class="h-40 items-center">
+            <div class="bg-[url('/images/pattern-circles.svg')] bg-contain bg-no-repeat h-full w-full bg-top">
+                <h1 class="pt-8 text-center text-2xl font-bold">Simple, traffic-based pricing</h1>
+                <p class=" text-center p-4 pl-16 pr-16 font-extralight">Sign-up for our 30-day trial.  No credit card required. </p> 
             </div>
-            <div>
-                <img src="" alt="">
-                <p>100% data ownership</p>
+        </header>
+        <main class="pt-12 text-center">
+            <div class="rounded-xl bg-white drop-shadow-2xl">
+                <div class="p-8">
+                    <h2>100K PAGE VIEWS</h2>
+                    <div class="pt-4">      
+                        <div class="relative pt-1">
+                            <input type="range" class="form-range w-full h-6 p-0" min="0" max="100" id="customRange2"/>
+                        </div>
+                        <!-- <img src="/images/icon-slider.svg" alt=""> -->
+                    </div>
+                    <div class="flex justify-center pt-4">
+                        <p class="p-1 text-3xl">$16.00 </p>
+                        <p class="p-3 text-sm">/month</p>
+                    </div>
+                    <div class="p-4">
+                        <p>Monthly Billing<button>TTT</button>Yearly Billing <span>-25%</span></p>
+                    </div>
+                </div>
+                <hr class="">
+                <div class="mt-4 p-4">
+                    <div class="flex justify-center">
+                        <img class="p-1" src="/images/icon-check.svg" alt="">
+                        <p class="p-1">Unlimited websites</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img class="p-1" src="/images/icon-check.svg" alt="">
+                        <p class="p-1">100% data ownership</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img class="p-1" src="/images/icon-check.svg" alt="">
+                        <p class="p-1">Email reports</p>
+                    </div>
+                    <div>
+                        <button class="bg-black text-white p-3 pl-12 pr-12 rounded-full m-8">Start my trial</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <p>Email reports</p>
-            </div>
-            <button> Start my trial</button>
-        </div>
-
+        </main>
     </div>
-</main>
 </body>
 </html>
