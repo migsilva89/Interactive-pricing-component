@@ -538,9 +538,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[url\(\'\/images\/pattern-circles\.svg\'\)\] {
   background-image: url('/images/pattern-circles.svg');
 }
-.bg-contain {
-  background-size: contain;
-}
 .bg-top {
   background-position: top;
 }
