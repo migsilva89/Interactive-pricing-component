@@ -535,9 +535,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(41 51 86 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/images\/bg-pattern\.svg\'\)\] {
-  background-image: url('/images/bg-pattern.svg');
-}
 .bg-\[url\(\'\/images\/pattern-circles\.svg\'\)\] {
   background-image: url('/images/pattern-circles.svg');
 }
@@ -666,4 +663,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+@media (min-width: 1024px) {
+
+  .lg\:bg-contain {
+    background-size: contain;
+  }
 }
