@@ -3,6 +3,7 @@ let range = document.getElementById("customRange2")
 let toggle = document.getElementById("toggle")
 let views = document.getElementById("viewsNumber")
 let price = document.getElementById("price")
+let price2 = document.getElementById("price2")
 let pageViews = ["10K","50K","100K","500K", "1M"]
 let perMonth = [8, 12, 16, 24, 36]
 let yearly = false
@@ -19,6 +20,7 @@ toggle.addEventListener("change", function(){
 
 function updateResults() {
     price.innerHTML = yearly ? perMonth[range.value] * 0.75 : perMonth[range.value]
+    price2.innerHTML = yearly ? perMonth[range.value] * 0.75 : perMonth[range.value]
 }
 
 let submitBtn = document.getElementById("submit")
