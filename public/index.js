@@ -30,3 +30,10 @@ submit.addEventListener("click", function(){
     window.location.reload();
 })
 
+
+range.addEventListener("mousemove", function (){
+    // console.log(range.value)
+    var x = range.value * 25
+    var color = 'linear-gradient(90deg, rgb(165, 243, 235)' + x + '%, rgb(214,214,214)' + x + '%)'
+    range.style.background = color
+})
